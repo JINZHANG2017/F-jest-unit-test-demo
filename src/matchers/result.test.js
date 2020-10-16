@@ -1,14 +1,14 @@
 test("是否相等", () => {
   // TODO: change matcher
-  expect(4).matcher(4);
+  expect(4).toBe(4);
 
   // TODO: change matcher
   const object = { one: 1, two: 2 };
-  expect(object).matcher({ one: 1, two: 2 });
+  expect(object).toEqual({ one: 1, two: 2 });
 
   // TODO: change matcher
   const array = [{ one: 1 }, { two: 2 }];
-  expect(array).matcher(array);
+  expect(array).toEqual(array);
 });
 
 test("是否包含X", () => {
